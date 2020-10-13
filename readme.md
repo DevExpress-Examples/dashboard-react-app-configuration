@@ -2,7 +2,7 @@
 
 This example is a ready-to-use client React application with the DevExpress Dashboard component.
 
-This example illustrates how to use the React-based `dx-dashboard-control` component for displaying and editing dashboards. The following properties are used to switch the working and the currently displayed dashboard: 
+This example illustrates how to use the React-based `dx-dashboard-control` component for displaying and editing dashboards. The following properties are used to switch the working mode and the currently displayed dashboard: 
 
 - [workingMode](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions?v=20.2#js_devexpress_dashboard_dashboardcontroloptions_workingmode)
 - [dashboardId](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions?v=20.2#js_devexpress_dashboard_dashboardcontroloptions_dashboardid)
