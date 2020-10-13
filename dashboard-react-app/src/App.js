@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 import DashboardControl from 'devexpress-dashboard-react';
 import {TextBoxItemEditorExtension} from 'devexpress-dashboard/designer/text-box-item-editor-extension';
+import SelectBox from 'devextreme-react/select-box';
+import Button from 'devextreme-react/button';
+
+const store = [
+  "RevenueAnalysis",
+  "SalesDetails",
+  "SalesOverview"
+]
 
 function switchMode(props) {
   return props === 'Viewer' ? "Designer" : "Viewer";
@@ -12,13 +20,20 @@ function onBeforeRender(e) {
 }
 
 function App() {
+  const [dashboardId, setDashboardId] = useState(store[2]);
   const [workingModeVar, setWorkingMode] = useState("Designer");
   return (
     <div style={{ position : 'absolute', top : '0px', left: '0px', right : '0px', bottom: '0px' }}>
-      <button onClick={() => { setWorkingMode(switchMode(workingModeVar)) }}>Switch to {switchMode(workingModeVar)}</button>
+      <Button onClick={() => { setWorkingMode(switchMode(workingModeVar)) }}>Switch to {switchMode(workingModeVar)}</Button>
+      <SelectBox
+        dataSource={store}
+        value={ dashboardId }
+        onValueChanged={ (e) => setDashboardId(e.value) }
+      ></SelectBox>
       <DashboardControl style={{ height: '90%' }} 
-        endpoint="https://localhost:5001/dashboard/api"
+        endpoint="https://demos.devexpress.com/services/dashboard/api"
         workingMode={workingModeVar}
+        dashboardId = {dashboardId}
         onBeforeRender={onBeforeRender}>
       </DashboardControl>
   </div>
