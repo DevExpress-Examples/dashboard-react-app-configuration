@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Second Dashboard" />
+  <DataSources>
+    <ObjectDataSource Name="Object Data Source" ComponentName="objectDataSource1" />
+  </DataSources>
+  <Items>
+    <Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="objectDataSource1">
+      <DataItems>
+        <Dimension DataMember="Country" DefaultId="DataItem0" />
+        <Dimension DataMember="City" DefaultId="DataItem1" />
+        <Measure DataMember="ExtendedPrice" DefaultId="DataItem2" />
+        <Dimension DataMember="ProductName" DefaultId="DataItem3" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn>
+          <Dimension DefaultId="DataItem3" />
+        </GridDimensionColumn>
+        <GridDimensionColumn>
+          <Dimension DefaultId="DataItem0" />
+        </GridDimensionColumn>
+        <GridDimensionColumn>
+          <Dimension DefaultId="DataItem1" />
+        </GridDimensionColumn>
+        <GridMeasureColumn>
+          <Measure DefaultId="DataItem2" />
+        </GridMeasureColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" DataSource="objectDataSource1">
+      <DataItems>
+        <Dimension DataMember="OrderDate" DefaultId="DataItem0" />
+        <Measure DataMember="ExtendedPrice" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value DefaultId="DataItem1" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutItem DashboardItem="gridDashboardItem1" Weight="0.8450470392916435" />
+      <LayoutItem DashboardItem="chartDashboardItem1" Weight="1.1549529607083564" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

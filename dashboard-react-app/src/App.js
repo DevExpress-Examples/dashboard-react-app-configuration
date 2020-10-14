@@ -6,14 +6,14 @@ import SelectBox from 'devextreme-react/select-box';
 import Button from 'devextreme-react/button';
 
 const store = [
-  "RevenueAnalysis",
-  "SalesDetails",
-  "SalesOverview"
-]
+  {"id": "dashboard1", "name": "Sample Dashboard"},
+  {"id": "dashboard2", "name": "Second Dashboard"},
+];
 
 function switchMode(props) {
   return props === 'Viewer' ? "Designer" : "Viewer";
 }
+
 function onBeforeRender(e) {
   var dashboardControl = e.component;
   dashboardControl.registerExtension(new TextBoxItemEditorExtension(dashboardControl));
@@ -28,13 +28,17 @@ function App() {
       <SelectBox
         dataSource={store}
         value={ dashboardId }
+        valueExpr='id'
+        displayExpr='name'
         onValueChanged={ (e) => setDashboardId(e.value) }
       ></SelectBox>
       <DashboardControl style={{ height: '90%' }} 
-        endpoint="https://demos.devexpress.com/services/dashboard/api"
+        endpoint="https://localhost:5001/dashboard/api"
         workingMode={workingModeVar}
         dashboardId = {dashboardId}
-        onBeforeRender={onBeforeRender}>
+        onBeforeRender={onBeforeRender}
+        onOptionChanged = { e => { if(e.name === 'dashboardId') { setDashboardId(e.value) } } }
+        >
       </DashboardControl>
   </div>
   );
