@@ -43,5 +43,6 @@ Documentation:
 - [Dashboard Component for React](https://docs.devexpress.com/Dashboard/401977/web-dashboard/dashboard-component-for-react?v=20.2)
 
 Examples:
+- [Dashboard Client-Side Application (React)](https://github.com/DevExpress-Examples/dashboard-react-app)
 - [Dashboard Client-Side Application (Angular)](https://github.com/DevExpress-Examples/dashboard-angular-app)
 - [Dashboard Client-Side Application (Vue)](https://github.com/DevExpress-Examples/dashboard-vue-app)
