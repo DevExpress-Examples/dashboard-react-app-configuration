@@ -36,13 +36,11 @@ npm start
 
 Open ```http://localhost:3000/``` in your browser to see the result.
 
-## See Also
-
-Documentation:
+## Documentation
 - [Add Web Dashboard to a React Application](https://docs.devexpress.com/Dashboard/400683/web-dashboard/dashboard-component-for-react/add-web-dashboard-to-a-react-application?v=20.2)
 - [Dashboard Component for React](https://docs.devexpress.com/Dashboard/401977/web-dashboard/dashboard-component-for-react?v=20.2)
 
-Examples:
+## Examples
 - [Dashboard Client-Side Application (React)](https://github.com/DevExpress-Examples/dashboard-react-app)
 - [Dashboard Client-Side Application (Angular)](https://github.com/DevExpress-Examples/dashboard-angular-app)
 - [Dashboard Client-Side Application (Vue)](https://github.com/DevExpress-Examples/dashboard-vue-app)
