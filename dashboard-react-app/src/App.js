@@ -33,7 +33,7 @@ function App() {
         onValueChanged={ (e) => setDashboardId(e.value) }
       ></SelectBox>
       <DashboardControl style={{ height: '90%' }} 
-        endpoint="https://localhost:5001/dashboard/api"
+        endpoint="http://localhost:5000/api/dashboard"
         workingMode={workingModeVar}
         dashboardId = {dashboardId}
         onBeforeRender={onBeforeRender}
