@@ -13,7 +13,7 @@ See the following file for implementation details:
 
 - [App.js](./dashboard-react-app/src/App.js)
 
-The example uses a modular approach that based on the client-server model. You need a server (backend) project and a client (frontend) application that includes all the necessary styles, scripts and HTML-templates. Note that the script version on the client should match with libraries version on the server up to a minor version.
+The example uses a modular approach that based on the client-server model. You need a server (backend) project and a client (frontend) application that includes all the necessary styles, scripts and HTML-templates. Note that the script version on the client should match with libraries version on the server.
 
 - The [asp-net-core-server](asp-net-core-server) folder contains an ASP.NET Core 3.1 Dashboard application.
 - The [dashboard-react-app](dashboard-react-app) folder contains a client application.
