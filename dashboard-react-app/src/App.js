@@ -6,8 +6,8 @@ import SelectBox from 'devextreme-react/select-box';
 import Button from 'devextreme-react/button';
 
 const store = [
-  {"id": "dashboard1", "name": "Sample Dashboard"},
-  {"id": "dashboard2", "name": "Second Dashboard"},
+  {"id": "products", "name": "Sample Dashboard"},
+  {"id": "support", "name": "Second Dashboard"},
 ];
 
 function switchMode(props) {
