@@ -52,7 +52,7 @@ Open ```http://localhost:3000/``` in your browser to see the result.
 
 ## Examples
 
-- [Dashboard Component for Angular - Configuration](https://github.com/DevExpress-Examples/dashboard-angular-example)
-- [Dashboard Component for Vue - Configuration](https://github.com/DevExpress-Examples/dashboard-vue-example)
-- [Get Started - Client-Side Dashboard Application (React)](https://github.com/DevExpress-Examples/dashboard-react-app)
+- [Dashboard Component for Angular - Configuration](https://github.com/DevExpress-Examples/dashboard-angular-app-configuration)
+- [Dashboard Component for Vue - Configuration](https://github.com/DevExpress-Examples/dashboard-vue-app-configuration)
+- [Get Started - Client-Side Dashboard Application (React)](https://github.com/DevExpress-Examples/dashboard-react-app-get-started)
 - [ASP.NET Core 3.1 backend for Web Dashboard](https://github.com/DevExpress-Examples/asp-net-core-dashboard-backend)
