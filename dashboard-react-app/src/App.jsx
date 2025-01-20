@@ -36,7 +36,6 @@ function App() {
         value={ dashboardId }
         valueExpr='id'
         displayExpr='name'
-        width=""
         onValueChanged={ (e) => setDashboardId(e.value) }
       ></SelectBox>
       <DashboardControl style={{ height: '90%' }} 
