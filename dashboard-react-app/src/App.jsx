@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import './App.css';
+import 'devextreme/dist/css/dx.common.css';
+import 'devextreme/dist/css/dx.light.css';
+import 'devexpress-richedit/dist/dx.richedit.css';
+import '@devexpress/analytics-core/dist/css/dx-analytics.common.css';
+import '@devexpress/analytics-core/dist/css/dx-analytics.light.css';
+import '@devexpress/analytics-core/dist/css/dx-querybuilder.css';
+import 'devexpress-dashboard/dist/css/dx-dashboard.light.css';
 import DashboardControl from 'devexpress-dashboard-react';
 import {TextBoxItemEditorExtension} from 'devexpress-dashboard/designer/text-box-item-editor-extension';
 import SelectBox from 'devextreme-react/select-box';
