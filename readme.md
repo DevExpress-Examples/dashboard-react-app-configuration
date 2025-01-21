@@ -10,18 +10,18 @@ This example shows how you can configure the `DashboardControl` component in a R
 
 The following properties specify the currently displayed dashboard and designer availability:
 
-- [dashboardId](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions?v=20.2#js_devexpress_dashboard_dashboardcontroloptions_dashboardid)
-- [workingMode](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions?v=20.2#js_devexpress_dashboard_dashboardcontroloptions_workingmode)
+- [dashboardId](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions#js_devexpress_dashboard_dashboardcontroloptions_dashboardid)
+- [workingMode](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions#js_devexpress_dashboard_dashboardcontroloptions_workingmode)
 
-In addition, the [onBeforeRender](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions?v=20.2#js_devexpress_dashboard_dashboardcontroloptions_onbeforerender) event handler registers the extension that [enables Text Editor functionality](https://docs.devexpress.com/Dashboard/401572/web-dashboard/create-dashboards-on-the-web/designing-dashboard-items/text-box/enable-text-editor-functionality).
+In addition, the [onBeforeRender](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.DashboardControlOptions#js_devexpress_dashboard_dashboardcontroloptions_onbeforerender) event handler registers the extension that [enables Text Editor functionality](https://docs.devexpress.com/Dashboard/401572/web-dashboard/create-dashboards-on-the-web/designing-dashboard-items/text-box/enable-text-editor-functionality).
 
 See the following file for implementation details:
 
-- [App.js](./dashboard-react-app/src/App.js)
+- [App.jsx](./dashboard-react-app/src/App.jsx)
 
 The example uses a client-server architecture. The server (backend) project communicates with the client (frontend) application that includes all the necessary styles, scripts and HTML templates. Note that the script version on the client must match the version of libraries on the server.
 
-- The [asp-net-core-server](asp-net-core-server) folder contains the backend project built with ASP.NET Core 3.1.
+- The [asp-net-core-server](asp-net-core-server) folder contains the backend project built with ASP.NET Core.
 - The [dashboard-react-app](dashboard-react-app) folder contains the client application built with React.
 
 ## Quick Start
@@ -46,10 +46,10 @@ In the **dashboard-react-app** folder, run the following commands:
 
 ```
 npm install
-npm start
+npm run dev
 ```
 
-Open ```http://localhost:3000/``` in your browser to see the result.
+pen your browser and navigate to the URL specified in the command output to see the result.
 
 ## Documentation
 
